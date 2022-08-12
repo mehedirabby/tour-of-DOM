@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Of DOM</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        li{
+            color: magenta;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Welcome To My DOM</h1>
+</header>
+<main>
+    <h1>My DOM baba</h1>
+    <ul>
+        <li>jalali set</li>
+        <li>shafayet</li>
+        <li>bonobash</li>
+        <li>dom dere baba</li>
+    </ul>
+    <ul>
+        <li>apple</li>
+        <li>banana</li>
+        <li>mango</li>
+    </ul>
+</main>
+<script src="js/dom.js"></script>
+<script>
+   const liConection = document.getElementsByTagName('li');
+//    console.log(liConection);
+for(const li of liConection){
+    console.log(li.innerText);
+}
+
+
+</script>
+</body>
+</html>
