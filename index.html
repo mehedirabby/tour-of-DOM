@@ -29,7 +29,7 @@
     <h1>Welcome To My DOM</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam esse reprehenderit eius. Voluptas excepturi ducimus quasi! Corrupti sunt, assumenda non reprehenderit architecto repellendus mollitia labore velit vel iusto ipsum inventore.</p>
 </header>
-<main>
+<main id="main-container">
    <section>
     <h1>My DOM baba</h1>
     <ul>
@@ -49,7 +49,7 @@
     </section>
     <section id="places-container" class="large-text">
         <h1 id="place-title" class="another-thiing something-added wonderful-class">places i want to visit</h1>
-        <ul>
+        <ul id="places-list">
             <li class="important-places">shundarban</li>
             <li class="important-places">bandorban</li>
             <li class="important-places">kataban</li>
@@ -58,7 +58,9 @@
     </section>
 </main>
 <script src="js/dom.js"></script>
+<script src="js/append.js"></script>
 <script src="js/styleInjs.js"></script>
+
 <script>
    const liConection = document.getElementsByTagName('li');
 //    console.log(liConection);
