@@ -10,13 +10,27 @@
         li{
             color: magenta;
         }
+        #fruits-title{
+            color: blueviolet;
+        }
+        .important-places{
+            color: blueviolet;
+        }
+        .fruits-container li{
+
+            color: black;
+
+            }
+        
     </style>
 </head>
 <body>
     <header>
     <h1>Welcome To My DOM</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam esse reprehenderit eius. Voluptas excepturi ducimus quasi! Corrupti sunt, assumenda non reprehenderit architecto repellendus mollitia labore velit vel iusto ipsum inventore.</p>
 </header>
 <main>
+   <section>
     <h1>My DOM baba</h1>
     <ul>
         <li>jalali set</li>
@@ -24,20 +38,43 @@
         <li>bonobash</li>
         <li>dom dere baba</li>
     </ul>
-    <ul>
-        <li>apple</li>
-        <li>banana</li>
-        <li>mango</li>
-    </ul>
+   </section>
+    <section class="fruits-container">
+        <h1 id="fruits-title">fruits I like</h1>
+        <ul>
+            <li>apple</li>
+            <li>banana</li>
+            <li>mango</li>
+        </ul>
+    </section>
+    <section>
+        <h1 id="place-title" class="another-thiing something-added wonderful-class">places i want to visit</h1>
+        <ul>
+            <li class="important-places">shundarban</li>
+            <li class="important-places">bandorban</li>
+            <li class="important-places">kataban</li>
+            <li>shalbon</li>
+        </ul>
+    </section>
 </main>
 <script src="js/dom.js"></script>
 <script>
    const liConection = document.getElementsByTagName('li');
 //    console.log(liConection);
 for(const li of liConection){
-    console.log(li.innerText);
+    // console.log(li.innerText);
+    const places = document.getElementsByClassName('important-places');
+    for(const place of places){
+        console.log(place.innerText);
+    }
+
 }
 
+
+    const someLi = document.querySelectorAll('.fruits-container');
+    for (const li of someLi){
+        console.log(li.innerText);
+    }
 
 </script>
 </body>
