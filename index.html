@@ -47,7 +47,7 @@
             <li>mango</li>
         </ul>
     </section>
-    <section>
+    <section id="places-container" class="large-text">
         <h1 id="place-title" class="another-thiing something-added wonderful-class">places i want to visit</h1>
         <ul>
             <li class="important-places">shundarban</li>
@@ -58,6 +58,7 @@
     </section>
 </main>
 <script src="js/dom.js"></script>
+<script src="js/styleInjs.js"></script>
 <script>
    const liConection = document.getElementsByTagName('li');
 //    console.log(liConection);
@@ -65,7 +66,7 @@ for(const li of liConection){
     // console.log(li.innerText);
     const places = document.getElementsByClassName('important-places');
     for(const place of places){
-        console.log(place.innerText);
+        //console.log(place.innerText);
     }
 
 }
@@ -73,7 +74,7 @@ for(const li of liConection){
 
     const someLi = document.querySelectorAll('.fruits-container');
     for (const li of someLi){
-        console.log(li.innerText);
+        //console.log(li.innerText);
     }
 
 </script>
